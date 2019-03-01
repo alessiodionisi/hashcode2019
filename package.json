@@ -1,0 +1,24 @@
+{
+  "name": "hashcode2019",
+  "version": "1.0.0",
+  "author": "Alessio Dionisi <hello@adns.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bin/main.js files/c.txt",
+    "develop": "ts-node ./src/main.ts files/c.txt",
+    "develop:watch": "nodemon ./src/main.ts files/c.txt",
+    "compile": "tsc",
+    "compile:watch": "tsc --watch"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.4",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  }
+}

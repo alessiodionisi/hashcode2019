@@ -80,12 +80,12 @@ function go(file) {
     const photos = parseFile(file);
     let slides = createSlideshow(photos);
     console.time('sorting');
-    for (let i = 0; i < slides.length - 1; ++i) {
+    for (let i = 0; i < slides.length - 1; i++) {
         const timeName = `sorting ${i + 1}/${slides.length}`;
         console.time(timeName);
         let bestIndex = i + 1;
         let bestDiff = 0;
-        for (let i2 = i + 1; i2 < slides.length; ++i2) {
+        for (let i2 = i + 1; i2 < slides.length; i2++) {
             let diff = compare(slides[i], slides[i2]);
             if (diff > bestDiff) {
                 bestDiff = diff;
